@@ -4,8 +4,10 @@
 // @author          n loewen
 // @description     Adds an input for map coordinates, and a button to open Google Maps directions from your MapCrunch starting point to those coordinates
 
+
+// @homepageURL     https://github.com/nickloewen/mapcrunch-userscripts
 // @updateURL       https://raw.githubusercontent.com/nickloewen/mapcrunch-userscripts/main/userscripts/MapCrunch%20-%20Check%20your%20geo-guess.js
-// @version         2022.01.17.1
+// @version         2022.01.17.2
 // @match           https://*.mapcrunch.com/*
 // @run-at          document-idle
 
