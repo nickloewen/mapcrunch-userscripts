@@ -14,7 +14,7 @@ I am now testing like this:
 - From URL: just open the URL
 - in either case, Stylus will intercept it and take you to an install-the-style page
 
-### Tampermonkey
+### Violentmonkey
 
 - Open the manager
 - Press the +
