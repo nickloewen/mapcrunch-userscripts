@@ -6,7 +6,7 @@ These scripts make it easier to play GeoGuessr-style games on mapcrunch.com:
 - [Jump to map](#jump-to-map) adds two buttons to MapCrunch — the first opens Google Maps at your current location, and the second opens Maps to a set of directions from where you started out when you pressed "Go" to where you are now
 - [Minimal UI](#minimal-ui) makes sure you can see as much of your streetview scene as possible, by hiding most of MapCrunch’s buttons and toolbars, and streamlining the few that remain (and it makes my other scripts look better, too)
 - [Hide location names](#hide-location-names) hides the box with the name of the current location
-- [Hide streetview labels](#hide-streetview-labels] hides the labels on roads, etc
+- [Hide streetview labels](#hide-streetview-labels) hides the labels on roads, etc
 
 I created and tested these using [Userscripts Safari](https://github.com/quoid/userscripts).
 
