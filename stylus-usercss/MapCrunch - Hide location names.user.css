@@ -1,0 +1,16 @@
+/* ==UserStyle==
+
+@name            MapCrunch - Hide location names
+@author          n loewen
+@description     Hides the box with the name of the current location
+
+@homepageURL     https://github.com/nickloewen/mapcrunch-userscripts/
+@updateURL       https://raw.githubusercontent.com/nickloewen/mapcrunch-userscripts/main/stylus-usercss/MapCrunch%20-%20Hide%20location%20names.user.css
+@namespace       https://github.com/nickloewen/
+@version         2022.01.17.1
+
+==/UserStyle== */
+
+@-moz-document domain("mapcrunch.com") {
+  #address, #info-address-first { display: none !important; }
+}

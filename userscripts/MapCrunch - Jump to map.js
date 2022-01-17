@@ -2,14 +2,13 @@
 
 // @name            MapCrunch - Jump to map
 // @author          n loewen
+// @description     Adds a button that opens Google Maps at your current location, and another that opens Maps with directions to your current location, from where you started when you pressed "Go"
 
-// @description     Adds a button that opens Google Maps at your current location, and another that opens Maps with directions to your current location, from where you started when you pressed "Go." 2022-01-17
-
+// @updateURL       https://raw.githubusercontent.com/nickloewen/mapcrunch-userscripts/main/userscripts/MapCrunch%20-%20Jump%20to%20map.js
+// @version         2022.01.17.1
 // @match           https://*.mapcrunch.com/*
-// @version         0.1.1
 
 // ==/UserScript==
-
 
 
 // NB - Google Maps API documentation: https://developers.google.com/maps/documentation/urls/get-started
