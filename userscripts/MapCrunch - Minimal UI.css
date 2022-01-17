@@ -1,0 +1,168 @@
+/* ==UserStyle==
+
+@name            MapCrunch - Minimal UI
+@author          n loewen
+
+@description     Hides ads, streamlines the top bar, moves prev/next buttons and location to bottom left, hides social media buttons, and makes my other scripts look nicer. 2022-01-16
+
+@match           https://*.mapcrunch.com/*
+@version         0.1.1
+
+==/UserStyle== */
+
+
+
+#bottom-box,
+#social,
+#menu,
+/* #info-box, */ /* shows location */
+#titlecaption
+{ display: none !important; }
+
+#topbar {
+    top: 0;
+    background: none;
+}
+
+#logo {
+    margin: 10px 15px;
+    padding: 0;
+}
+#logo img {
+    object-fit: none;
+    object-position: top left;
+    width: 45px;
+    height: 45px;
+}
+
+#buttons {
+    box-sizing: border-box;
+    width: 100vw !important;
+    float: none;
+    margin-left: 0;
+    margin-top: 30px;
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+.btn-black,
+.btn-black:hover {
+    border: none;
+    text-shadow: none;
+    border-radius: 5px;
+    margin-top: -7px;
+}
+
+/* Hide button text */
+#options-button,
+#share-button,
+#go-button 
+    { font-size: 0; }
+/* But show icons */
+#options-button i,
+#share-button i,
+#go-button i
+    { font-size: 15px; }
+
+#share-button {
+    margin-right: 0;
+}
+
+#go-button {
+    border: none;
+    width: auto;
+}
+
+#options-panel,
+#share-panel {
+    top: 80px;
+}
+#options-panel.visible,
+#share-panel.visible {
+    left: 20px !important;
+}
+
+
+/* INFO BOX (contains prev/next panorama buttons, current location, etc) */
+
+#info-box {
+    top: unset; /* needed to override mc's css */
+    bottom: -10px; /* hang it off the bottom so that only the top corners look rounded */
+    left: 85px; /* clear the Google logo */
+    text-shadow: none;
+    background: none;
+    border-radius: 5px;
+    padding: 10px;
+    height: 40px;
+    min-width: 88px; /* otherwise prev/next buttons wrap when location is hidden */
+}
+
+#info-box:hover {
+    background: rgba(0,0,0,.33);
+}
+
+/* Info box on homepage */
+
+#info-firstview div { display: none; } /* hide all of the extra bits */
+#info-firstview #info-address-first { display: revert; } /* but unhide the actual location */
+
+/* Info box on other pages */
+
+#prevnext { /* container for prev/next panorama buttons */
+    top: 7px;
+    left: 15px;
+}
+
+#prevnext a:link { /* prev/next panorama buttons */
+    border: none;
+    top: 5px;
+}
+
+#info-box:hover #prevnext a:link {
+    background: rgba(255,255,255,0.33);
+}
+
+#info-box:hover #prevnext a:hover {
+    background: rgba(0,0,0,0.33);
+}
+
+
+#current { /* number for current panorama (between prev/next buttons) */
+    font-weight: bold;
+    font-size: 12px;
+    background: none;
+    text-shadow: none;
+    border: none;
+}
+
+#info-box #address { /* location name */
+    padding-left: 80px; /* compensate for increasing the space around the prev/next buttons */
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+
+/* BUTTONS FOR MY OTHER SCRIPTS */
+
+
+.btn-facebook { /* re-purposed for my buttons in other scripts */
+    background: rgba(66, 133, 244, 0.5);
+    border: none;
+    margin-top: -7px;
+}
+
+
+/* FOR "CHECK YOUR GEO-GUESS" SCRIPT */
+
+#buttons form {
+    float: right;
+    display: inline-block;
+    margin-top: -7px;
+}
+
+#buttons form input {
+    border: none;
+    padding: 6px 12px;
+    opacity: 80%;
+    vertical-align: bottom !important;
+}

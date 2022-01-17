@@ -1,0 +1,12 @@
+/* ==UserStyle==
+
+@name            MapCrunch - Hide location names
+@author          n loewen
+
+@description     Hides the box with the name of the current location. 2022-01-16
+@version         0.1.0
+
+@match           https://*.mapcrunch.com/*
+==/UserStyle== */
+
+#address, #info-address-first { display: none !important; }
